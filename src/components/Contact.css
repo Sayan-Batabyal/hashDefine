@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(assets/images/HashDefine_Background.jpg);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 12%;
+}
+.sci li{
+    transition: transform 0.5s;
+}
+.sci li:hover{
+    transform: scale(1.10);
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.user{
+    width: 22px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.logo:hover{
+    transform: rotateY(360deg);
+}
+nav ul li a:hover{
+    color:red;
+}
+:root{
+    --primary : #32964B;
+    --dark:rgb(22,22,22);
+    --pure:#FFFFFF;
+    --smoke:whitesmoke;
+    --dark-gray:#999;
+    --youtube: #FF0000;
+    --secondary:green;
+    --twitter:#00acee;
+}
+.containment
+{
+    position: relative;
+    width: 90%;
+    height: 450px;
+    display: flex;
+    z-index: 3;
+}
+.containment .contactInfo
+{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: calc(100% - 80px);
+    background: black;
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-between;
+    box-shadow: 0 25px 25px rgba(0,0,0,0.15);
+}
+.containment .contactInfo h2{
+    color: yellow;
+    font-size: 24px;
+    font-weight: 500;
+}
+.containment .contactInfo ul.info{
+    position: relative;
+    margin: 20px 0px;
+}
+.containment .contactInfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+.containment .contactInfo ul.info li span:nth-child(1)
+{
+    min-width: 30px;
+    width: 30px;
+}
+.containment .contactInfo ul.info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+}
+.containment .contactInfo ul.info li span:nth-child(2)
+{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+}
+.containment .contactInfo ul.sci
+{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+}
+.containment .contactInfo ul.sci li{
+    list-style: none;
+    margin-right: 32px;
+}
+.containment .contactInfo ul.sci li a img{
+    filter: invert(1);
+}
+.containment .contactInfo ul.sci li a{
+    text-decoration: none;
+}
+.containment .contactForm
+{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 200px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+}
+.containment .contactForm h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+.containment .contactForm .formBox
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.containment .contactForm .formBox .inputBox
+{
+    position: relative;
+    margin-bottom: 35px;
+}
+.containment .contactForm .formBox .inputBox.w50
+{
+    width: 47%;
+}
+.containment .contactForm .formBox .inputBox.w100
+{
+    width: 100%;
+}
+.containment .contactForm .formBox .inputBox input,
+.containment .contactForm .formBox .inputBox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.containment .contactForm .formBox .inputBox textarea
+{
+    height: 120px;
+}
+.containment .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.containment .contactForm .formBox .inputBox input:focus ~ span,
+.containment .contactForm .formBox .inputBox textarea:focus ~ span,
+.containment .contactForm .formBox .inputBox input:valid ~ span,
+.containment .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #095a55;
+
+}
+.containment .contactForm .formBox .inputBox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #000;
+    color: #ffffff;
+    font-weight: 400;
+    max-width: 150px;
+    border: none;
+    padding: 12px;
+}
+.containment .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: var(--dark);
+}

@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(assets/images/HashDefine_Background.jpg);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 12%;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.user{
+    width: 22px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+.col{
+    flex-basis: 50%;
+}
+.col h1{
+    color: #fff;
+    font-size: 60px;
+}
+.col .company{
+    color: chartreuse;
+    font-size: 20px;
+}
+.col .certi{
+    color: yellow;
+}
+.col p{
+    color: #fff;
+    line-height: 25px;
+    font-weight: 500;
+}
+.explore{
+    margin-top: 40px;
+    width: 20%;
+    color: white;
+    background: rgb(211, 0, 0);
+    outline: none;
+    font-weight: 500;
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.verify
+{
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 20%;
+    color: white;
+    background: blue;
+    outline: none;
+    font-weight: 500;
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.verify:hover{
+    background: #000;
+}
+.explore:hover{
+    background: black;
+}
+.logo:hover{
+    transform: rotateY(360deg);
+}
+nav ul li a:hover{
+    color:red;
+}
+.card{
+    width: 240px;
+    height: 230px;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 35px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.col h3{
+    color: #fff;
+}
+.card1{
+    background-image: url(assets\\images\\card1.jpg);
+}
+.card2{
+    background-image: url(assets\\images\\card2.webp);
+}
+.card3{
+    background-image: url(assets\\images\\card3.webp);
+}
+.card4{
+    background-image: url(assets\\images\\card4.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card p{
+    font-size: 18px;
+    text-shadow: 0 0 5px #000;
+}
